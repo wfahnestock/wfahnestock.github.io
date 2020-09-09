@@ -13,7 +13,7 @@ HTML: News Website
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -61,6 +61,12 @@ HTML: News Website
                 <p>Aenean sapien lacus, faucibus ... </p>
                 <img src='#urltoimg' alt='description of image'>
                 <p>Sed vitae nibh vehicula ... </p>
+                <blockquote>
+                    <p>Suspendisse eros sem, dignissim ac laoreet... </p>
+                    <footer>
+                        <p><cite>creative work</cite> by author</p>
+                    </footer>
+                </blockquote>
                 <!-- meta-data -->
                 <img src='#urltoimg' alt='description of image'>
             </header>
@@ -72,7 +78,44 @@ HTML: News Website
                     <dt>Number of comments</dt>
                     <dd>4 Comments</dd>
                 </dl>
+                <section id="about">
+                    <h3>About the Author</h3>
+                    <img src='#urltoimg' alt='description of image'>
+                    <h4>John Smith</h4>
+                    <p>Lorem ipsum dolor sit amet... </p>
+                    <ul class="social">
+                        <li><a href="#" target='_blank'>Facebook</a></li>
+                        <li><a href="#" target='_blank'>Twitter</a></li>
+                        <li><a href="#" target='_blank'>Instagram</a></li>
+                        <li><a href="#" target='_blank'>Snapchat</a></li>
+                        <li><a href="#" target='_blank'>LinkedIn</a></li>
+                    </ul>
+                </section>
                 <!-- related news -->
+                <section id="related">
+                    <h3>Realated Articles</h3>
+                    <!-- articles -->
+                    <ul>
+                        <li>
+                            <img src='#urltoimg' alt='description of image'>
+                            <h4>Article title</h4>
+                            <!-- date -->
+                            <p><time datetime="07-03-2019">July 3, 2019</time><p></p>
+                        </li>
+                        <li>
+                            <img src='#urltoimg' alt='description of image'>
+                            <h4>Article title</h4>
+                            <!-- date -->
+                            <p><time datetime="07-03-2019">July 3, 2019</time><p></p>
+                        </li>
+                        <li>
+                            <img src='#urltoimg' alt='description of image'>
+                            <h4>Article title</h4>
+                            <!-- date -->
+                            <p><time datetime="07-03-2019">July 3, 2019</time><p></p>
+                        </li>
+                    </ul>
+                </section>
             </aside>
         </main>
     </body>
