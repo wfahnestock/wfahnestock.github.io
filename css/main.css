@@ -1,44 +1,73 @@
 /* Bike Shop CSS
-================================================== 
+==================================================
 ================================================== */
 html {
     font-family: program, sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #111111;
+    /* background-color: #111111; */
 }
-a {
-    font-weight: bold;
-    color: #c0392b;
-    text-decoration: underline;
+body {
+    margin: 0;
+    padding: 0;
 }
-#navbar {
-    background-color: #444444;
-    width: 100%;
-    height: 50px;
-    border-top: 5px solid #c0392b;
-    margin-right: 15px;
-}
-#navLinks {
-    height: auto;
-    width: auto;
+/* Header ============================== */
+header {
     text-align: center;
+    width: 100%;
 }
-#navLinks a {
+nav {
+    background: #444444;
+    border-top: 5px solid #c0392b;
+}
+nav li { display: inline-block; }
+nav a {
+	display: block;
+    padding: 1.3rem;
     color: #999999;
     opacity: 85%;
     text-decoration: none;
-    margin-right: 50px;
-    display: inline-block;
-    height: 45px;
-    width: 7%;
-    text-align: center;
-    padding-top: 15px;
 }
-#navLinks a:hover {
+nav a:hover {
     color: #dddddd;
     opacity: 100%;
 }
-#navLinks .active {
+nav .active {
     background-color: #111111;
+}
+#navLinks {
+    margin: 0;
+}
+/* Banner ============================== */
+#banner {
+    z-index: 9;
+    margin: 0;
+    padding: 0;
+    float: right;
+    width: 100%;
+    height: 550px;
+}
+#logo {
+    z-index: 100;
+    float: left;
+    left: 230px;
+    right: 0;
+    top: 200px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+/* Adverts/Redirects ============================== */
+#redirects {
+    background-color: #111111;
+    width: 100%;
+    text-align: center;
+}
+#redirects li { 
+    display: inline-block;
+    clear: left;
+    background-image: url(../images/bikes.jpg); 
+    width: 150px;
+    height: 150px;
+    margin: 15px;
 }
