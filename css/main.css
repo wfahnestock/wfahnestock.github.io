@@ -11,10 +11,49 @@ body {
     margin: 0;
     padding: 0;
 }
+button {
+    box-shadow:inset 0px 0px 0px 0px #cf866c;
+	background-color:#c03a2b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:program, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px 20px;
+	text-decoration: none;
+    text-shadow:0px 1px 0px #000000;
+    border: 0px solid #c03a2b;
+}
+button:hover {
+    background-color:#962d22;
+}
+button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+strong {
+    font-weight: bold;
+}
+.blur {
+    background-color: #111111;
+    opacity: 85%;
+    width: 100%;
+    height: 450px;
+}
 /* Header ============================== */
 header {
     text-align: center;
     width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 nav {
     background: #444444;
@@ -27,6 +66,7 @@ nav a {
     color: #999999;
     opacity: 85%;
     text-decoration: none;
+    text-transform: uppercase;
 }
 nav a:hover {
     color: #dddddd;
@@ -43,7 +83,6 @@ nav .active {
     z-index: 9;
     margin: 0;
     padding: 0;
-    float: right;
     width: 100%;
     height: 550px;
 }
@@ -61,13 +100,132 @@ nav .active {
 #redirects {
     background-color: #111111;
     width: 100%;
-    text-align: center;
+    min-height: 550px;
+    line-height: 100px;
+    position: absolute;
 }
-#redirects li { 
+#container {
+    margin-top: 130px;
+}
+#bikes {
+    margin: 0 auto;
+    margin-left: 12%;
+    background-image: url(../images/bikes.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    color: #dddddd;
+    text-align: center;
+    line-height: 50px;
+}
+#bikes h2 {
+    padding: 0;
+    background-color: #111111;
+    opacity: 90%;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+#accessories {
+    margin: 0 auto;
+    margin-left: 37%;
+    background-image: url(../images/speedometer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    position: absolute;
+    color: #dddddd;
+    line-height: 50px;
+}
+#accessories h2 {
+    padding: 0;
+    background-color: #111111;
+    opacity: 90%;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+#apparel {
+    margin: 0 auto;
+    margin-left: 62%;
+    background-image: url(../images/backpack.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    position: absolute;
+    color: #dddddd;
+    line-height: 50px;
+}
+#apparel h2 {
+    padding: 0;
+    background-color: #111111;
+    opacity: 90%;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+/* Featured Products ============================== */
+#featured {
+    position: relative;
+    margin-top: 550px;
+    background-color: #dddddd;
+}
+#featured h2 {
+    text-decoration: none;
+    font-weight: lighter;
+    margin-left: 25.4%;
+}
+#featured strong {
+    text-transform: uppercase;
+}
+#grid {
     display: inline-block;
-    clear: left;
-    background-image: url(../images/bikes.jpg); 
-    width: 150px;
-    height: 150px;
-    margin: 15px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-gap: 60px;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Member Benefits ============================== */
+#benefits {
+    position: relative;
+    background-image: url(../images/gears.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
+    width: 100%;
+    min-height: 450px;
+    color: #ffffff;
+}
+/* Footer ============================== */
+footer {
+    position: relative;
+    background-color: #111111;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
 }
