@@ -7,6 +7,10 @@ html {
     font-style: normal;
     /* background-color: #111111; */
 }
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -40,7 +44,7 @@ strong {
     background-color: #111111;
     opacity: 85%;
     width: 100%;
-    height: 450px;
+    height: 550px;
 }
 /* Header ============================== */
 header {
@@ -180,19 +184,23 @@ nav .active {
     font-size: 2.5rem;
     text-transform: uppercase;
 }
+#redirects button {
+    margin-top: 10%;
+}
 /* Featured Products ============================== */
 #featured {
     position: relative;
     margin-top: 550px;
     background-color: #dddddd;
     width: 100%;
-    min-height: 650px;
+    min-height: 750px;
 }
 #featured h2 {
     text-decoration: none;
     font-weight: lighter;
-    margin-left: 26%;
+    left: 18.4%;
     text-transform: uppercase;
+    position: relative;
 }
 #featured strong {
     text-transform: uppercase;
@@ -200,18 +208,16 @@ nav .active {
 #grid {
     display: grid;
     grid-template-columns: 175px 175px 175px 175px;
-    grid-gap: 60px;
+    grid-gap: 100px;
     justify-content: center;
     align-content: center;
 }
 .item {
     height: 200px;
     width: 200px;
-    margin: 0;
-    padding: 0;
 }
-.item:hover {
-    border: 3px solid #444444;
+#featured article:hover {
+    color: red;
 }
 #featured #description, #price {
     position: inherit;
@@ -225,7 +231,7 @@ nav .active {
     background-repeat: no-repeat;
     opacity: 90%;
     width: 100%;
-    min-height: 450px;
+    min-height: 550px;
     color: #ffffff;
 }
 /* Footer ============================== */
