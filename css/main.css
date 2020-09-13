@@ -7,13 +7,14 @@ html {
     font-style: normal;
     /* background-color: #111111; */
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 button {
     box-shadow:inset 0px 0px 0px 0px #cf866c;
@@ -44,7 +45,7 @@ strong {
     background-color: #111111;
     opacity: 85%;
     width: 100%;
-    height: 550px;
+    height: 650px;
 }
 /* Header ============================== */
 header {
@@ -216,9 +217,9 @@ nav .active {
     height: 200px;
     width: 200px;
 }
-#featured article:hover {
-    color: red;
-}
+/* #featured article:hover {
+    border: 2px solid red;
+} */
 #featured #description, #price {
     position: inherit;
 }
@@ -231,8 +232,44 @@ nav .active {
     background-repeat: no-repeat;
     opacity: 90%;
     width: 100%;
-    min-height: 550px;
+    min-height: 650px;
     color: #ffffff;
+    text-align: center;
+}
+#benefits h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #666666;
+    font-size: 2rem;
+    top: 100px;
+    position: relative;
+}
+#benefits strong {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-gap: 220px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10%;
+    margin-left: 350px;
+}
+.grid section {
+    text-align: center;
+}
+.grid section p {
+    padding: 10px;
+}
+.grid section h3 {
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+#truck, #wrench, #envelope {
+    border: 5px solid #666666;
 }
 /* Footer ============================== */
 footer {
