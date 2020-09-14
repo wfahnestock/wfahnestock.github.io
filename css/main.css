@@ -5,7 +5,6 @@ html {
     font-family: program, sans-serif;
     font-weight: 400;
     font-style: normal;
-    /* background-color: #111111; */
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
@@ -280,6 +279,7 @@ nav .active {
     width: 250px;
     position: relative;
     right: 50px;
+    margin-top: 10px;
     
 }
 #truck, #wrench, #envelope {
