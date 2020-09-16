@@ -91,7 +91,7 @@ nav .active {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    content: url(../images/banner.jpg);
+    content: url(../images/banner_upscaled.jpg);
 }
 #logo {
     z-index: 100;
