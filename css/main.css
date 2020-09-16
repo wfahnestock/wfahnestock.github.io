@@ -76,6 +76,7 @@ nav a:hover {
 }
 nav .active {
     background-color: #111111;
+    color: #ffffff;
 }
 #navLinks {
     margin: 0;
