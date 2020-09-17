@@ -78,7 +78,7 @@ nav .active {
     background-color: #111111;
     color: #ffffff;
 }
-#navLinks {
+nav ul {
     margin: 0;
 }
 /* Banner ============================== */
