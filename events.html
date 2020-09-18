@@ -27,26 +27,24 @@
               </nav>
         </header>
 
-        <section>
-            <img id="banner" src="images/banner_upscaled.jpg" />
-        </section>
+        <section id="banner"></section>
 
         <section id="cards">
             <section id="grid">
                 <article>
-                    <img src="images/bikes.jpg" />
+                    <img src="images/bikes.jpg" alt="bikes"/>
                     <h2>Lorem Ipsum</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                     <p><a href="#">read more...</a></p>
                 </article>
                 <article>
-                    <img src="images/gears.jpg" />
+                    <img src="images/gears.jpg" alt="gears"/>
                     <h2>Lorem Ipsum</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                     <p><a href="#">read more...</a></p>
                 </article>
                 <article>
-                    <img src="images/speedometer.jpg"/>
+                    <img src="images/speedometer.jpg" alt="speedometer"/>
                     <h2>Lorem Ipsum</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                     <p><a href="#">read more...</a></p>
@@ -54,29 +52,53 @@
             </section>
         </section>
 
-        <section>
-            <article>
-                <h2>Upcoming Club Events</h2>
-                <h3>Event 1 - <time datetime="2020-09-13">9/13</time></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </article>
-            <article>
-                <h3>Event 2 - <time datetime="2020-10-15">10/15</time></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </article>
-            <article>
-                <h3>Event 3 - <time datetime="2020-11-23">11/23</time></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </article>
+        <section id="events">
+            <h2>Upcoming<br>
+                <strong>Club Events</strong></h2>
+            <section id="grid">
+                <article>
+                    <time datetime="2020-10-15" class="icon">
+                        <strong>October</strong>
+                        <span>15</span>
+                    </time>
+                    <br>
+                        <h3>Event Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </article>
+                <article>
+                    <time datetime="2020-11-23" class="icon">
+                        <strong>November</strong>
+                        <span>23</span>
+                    </time>
+                    <br>
+                        <h3>Event Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </article>
+                <article>
+                    <time datetime="2020-12-23" class="icon">
+                        <strong>December</strong>
+                        <span>23</span>
+                    </time>
+                    <br>
+                        <h3>Event Name</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                </article>
+            </section>
         </section>
 
-        <section>
-            <h2>Popular Events</h2>
-            <article>
-                <h3>Event 3 - <time datetime="2020-11-23">11/23</time></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                <p><a href="#">Next</a></p>
-            </article>
+        <section id="popular">
+            <h2>Popular <br><strong>Events</strong></h2>
+            <section id="event">
+                <article>
+                    <img src="images/speedometer.jpg" alt="speedometer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                    </p>
+                    <p><a href="#">Next</a></p>
+                </article>
+            </section>
         </section>
 
         <footer>

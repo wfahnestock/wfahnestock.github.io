@@ -83,28 +83,41 @@ nav ul {
 /* Banner Image ============================== */
 #banner {
     width: 100%;
+    height: 600px;
     z-index: 1;
-    position: absolute;
+    background-image: url(../images/banner_upscaled.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
 }
 /* News Cards ============================== */
 #cards {
     z-index: 100;
-    position: relative;
-    margin: 200px auto;
-    margin-left: 330px;
+    left: 50%;
+    right: 50%;
+    top: 20%;
+    position: absolute;
+    margin-bottom: 0px;
 }
-#grid {
+#cards #grid {
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    grid-gap: 100px;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap: 50px;
     justify-content: center;
     align-content: center;
+    display: flex;
 }
-#grid h2 {
+#cards #grid h2 {
     font-weight: normal;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #c0392b;
     margin-bottom: 10px;
+}
+#cards #grid article p:nth-of-type(2) {
+    margin-top: 40px;
+    margin-right: 10px;
+    float: right;
 }
 #cards article {
     background-color: #dddddd;
@@ -120,7 +133,146 @@ nav ul {
     border: 0px solid #dddddd;
     border-radius: 5px 5px 0 0;
 }
-
+/* Main Events ============================== */
+#events {
+    background-color: #111111;
+    width: 100%;
+    height: 500px;
+    color: #ffffff;
+}
+#events h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #666666;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 20px;
+}
+#events h2 strong {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3rem;
+}
+#events #grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-gap: 100px;
+    justify-content: center;
+    align-content: center;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+#events article {
+    text-align: center;
+}
+#events time.icon {
+    font-size: 1em; /* change icon size */
+    display: block;
+    position: relative;
+    width: 5em;
+    height: 5em;
+    background-color: #fff;
+    border-radius: 0.6em;
+    box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#events time.icon * {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+#events time.icon strong {
+    position: absolute;
+    top: 0;
+    padding: 0.4em 0;
+    color: #fff;
+    background-color: #c0392b;
+    border-bottom: 1px dashed #6d2019;
+    box-shadow: 0 2px 0 #c03a2b;
+}
+#events time.icon span {
+    color: #444444;
+    font-size: 2.8em;
+    letter-spacing: -0.05em;
+    padding-top: 0.8em;
+}
+#events time strong {
+    font-weight: normal;
+}
+/* Popular Events ============================== */
+#popular {
+    background-image: url(../images/bike.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    color: #dddddd;
+}
+#popular h2 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 3rem;
+    padding-top: 20px;
+}
+#popular h2 strong {
+    font-size: 4rem;
+}
+#popular #event {
+    background-color: #dddddd;
+    width: 70%;
+    height: 450px;
+    margin: 0 auto;
+    color: #111111;
+}
+#event article {
+    margin: 0 auto;
+}
+#event figure {
+    margin: 0;
+    z-index: 1;
+    width: auto;
+}
+#event img {
+    width: 35%;
+    height: 450px;
+    position: absolute;
+}
+#event figcaption {
+    background-color: #222;
+    color: #fff;
+    opacity: 80%;
+    font: italic smaller program;
+    padding: 3px;
+    text-align: center;
+    width: 49.53%;
+    margin-top: -6px;
+    position: relative;
+}
+#event article p:nth-child(2) {
+    float: right;
+    margin: 5px;
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    word-wrap: break-word;
+    width: 34%;
+}
+#event article p:nth-child(3) {
+    float: right;
+    margin-top: 420px;
+    position: relative;
+    right: 10px;
+}
+#event article p:nth-child(3)::after {
+    content: "\2192";
+    padding-left: 5px;
+    color: blue;
+    text-decoration: none;
+}
 /* Footer ============================== */
 footer {
     position: relative;
@@ -128,7 +280,6 @@ footer {
     color: #ffffff;
     text-transform: uppercase;
     height: 550px;
-    margin-top: 415px;
 }
 footer a {
     color: #444444;
