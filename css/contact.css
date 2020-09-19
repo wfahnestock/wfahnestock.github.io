@@ -1,0 +1,194 @@
+/* Bike Shop CSS
+==================================================
+================================================== */
+html {
+    font-family: program, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+button {
+    box-shadow:inset 0px 0px 0px 0px #cf866c;
+	background-color:#c03a2b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:program, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px 20px;
+	text-decoration: none;
+    text-shadow:0px 1px 0px #000000;
+    border: 0px solid #c03a2b;
+}
+button:hover {
+    background-color:#962d22;
+}
+button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+strong {
+    font-weight: bold;
+}
+/* Header ============================== */
+header {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    overflow: hidden;
+}
+nav {
+    background: #444444;
+    border-top: 5px solid #c0392b;
+}
+nav li { display: inline-block; }
+nav a {
+	display: block;
+    padding: 1.3rem;
+    color: #999999;
+    opacity: 85%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover {
+    color: #dddddd;
+    opacity: 100%;
+}
+nav .active {
+    background-color: #111111;
+    color: #ffffff;
+}
+nav ul {
+    margin: 0;
+}
+/* Content ============================== */
+#main {
+    width: 100%;
+    height: 1000px;
+    background-color: #111111;
+    color: #ddd;
+    display: flex;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-gap: 350px;
+    justify-content: center;
+    padding-top: 25px;
+    margin: 0 auto;
+    margin-left: 25px;
+}
+#main section:nth-child(1) h2 {
+    padding-top: 20px;
+    width: 150px;
+}
+#main section:nth-child(1) img {
+    width: 450px;
+    height: 450px;
+    border: 2px solid #c0392b;
+}
+#main section:nth-child(1) p {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 450px;
+}
+#main section:nth-child(2) {
+    width: 500px;
+}
+#main section:nth-child(2) input, textarea {
+    background-color: #444444;
+    border: 2px solid #c0392b;
+    color: #dddddd;
+    font-family: program;
+}
+#main section:nth-child(2) textarea {
+    width: 495px;
+    height: 290px;
+}
+#main section:nth-child(2) input {
+    width: 300px;
+    height: 30px;
+}
+#main section:nth-child(2) label {
+    padding-bottom: 50px;
+}
+#main section:nth-child(2) button {
+    margin-top: 10px;
+    float: right;
+}
+/* Footer ============================== */
+footer {
+    position: relative;
+    background-color: #111111;
+    color: #ffffff;
+    text-transform: uppercase;
+    height: 550px;
+}
+footer a {
+    color: #444444;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+footer p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #dddddd;
+}
+footer #grid {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-gap: 220px;
+    justify-content: center;
+    align-content: center;
+    padding-top: 150px;
+}
+footer #grid section:nth-child(1) a {
+    color:white;
+    text-transform: uppercase;
+}
+footer #grid section:nth-child(1) h4 {
+    padding-bottom: 10px;
+}
+footer hr {
+    color: #444444;
+    width: 90%;
+    margin-top: 50px;
+    margin: 25px auto;
+    padding: 0;
+}
+#copyright {
+    float: left;
+    margin-left: 77px;
+    padding-top: 25px;
+    text-transform: capitalize;
+    color: #444444;
+    
+}
+#copyright p {
+    padding-right: 20px;
+    display: inline-block;
+}
+#guide {
+    float: right;
+    margin-right: 77px;
+    padding-top: 25px;
+}
+#guide a {
+    padding-left: 20px;
+}
