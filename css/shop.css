@@ -113,6 +113,19 @@ body > section:nth-of-type(1) article {
     color: #111111;
     text-align: center;
 }
+body > section:nth-of-type(1) article:nth-child(2) p:nth-of-type(1), article:nth-child(4) p:nth-of-type(1) {
+    text-decoration: line-through;
+}
+body > section:nth-of-type(1) .sale {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    background-color: #c0392b;
+    color: #dddddd;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
 /* New Arrival Products ============================== */
 body > section:nth-of-type(2) {
     background-image: url(../images/bike.jpg);
@@ -144,6 +157,19 @@ body > section:nth-of-type(2) article {
     height: 300px;
     color: #111111;
     text-align: center;
+}
+body > section:nth-of-type(2) .sale {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    background-color: #c0392b;
+    color: #dddddd;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+body > section:nth-of-type(2) article:nth-child(2) p:nth-of-type(1), article:nth-child(4) p:nth-of-type(1) {
+    text-decoration: line-through;
 }
 /* Footer ============================== */
 footer {
