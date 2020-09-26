@@ -103,7 +103,7 @@ nav ul {
     position: absolute;
 }
 /* Adverts/Redirects ============================== */
-#redirects {
+body > section:nth-of-type(1) {
     background-color: #111111;
     width: 100%;
     min-height: 550px;
