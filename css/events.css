@@ -92,7 +92,7 @@ nav ul {
     margin-bottom: 0px;
 }
 /* News Cards ============================== */
-#cards {
+body > section:nth-of-type(2) {
     z-index: 100;
     left: 50%;
     right: 50%;
@@ -100,7 +100,7 @@ nav ul {
     position: absolute;
     margin-bottom: 0px;
 }
-#cards #grid {
+body > section:nth-of-type(2) #grid {
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
     grid-gap: 50px;
@@ -108,18 +108,18 @@ nav ul {
     align-content: center;
     display: flex;
 }
-#cards #grid h2 {
+body > section:nth-of-type(2) #grid h2 {
     font-weight: normal;
     font-size: 3rem;
     color: #c0392b;
     margin-bottom: 10px;
 }
-#cards #grid article p:nth-of-type(2) {
+body > section:nth-of-type(2) #grid article p:nth-of-type(2) {
     margin-top: 40px;
     margin-right: 10px;
     float: right;
 }
-#cards article {
+body > section:nth-of-type(2) article {
     background-color: #dddddd;
     width: 300px;
     height: 375px;
@@ -127,20 +127,20 @@ nav ul {
     border: 0px solid #dddddd;
     border-radius: 5px;
 }
-#cards article img {
+body > section:nth-of-type(2) article img {
     width: 300px;
     height: 200px;
     border: 0px solid #dddddd;
     border-radius: 5px 5px 0 0;
 }
 /* Main Events ============================== */
-#events {
+body > section:nth-of-type(3) {
     background-color: #111111;
     width: 100%;
     height: 500px;
     color: #ffffff;
 }
-#events h2 {
+body > section:nth-of-type(3) h2 {
     text-transform: uppercase;
     font-weight: normal;
     color: #666666;
@@ -148,12 +148,12 @@ nav ul {
     text-align: center;
     padding-top: 20px;
 }
-#events h2 strong {
+body > section:nth-of-type(3) h2 strong {
     color: #ffffff;
     font-weight: bold;
     font-size: 3rem;
 }
-#events #grid {
+body > section:nth-of-type(3) #grid {
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
     grid-gap: 100px;
@@ -162,10 +162,10 @@ nav ul {
     margin-left: 200px;
     margin-top: 50px;
 }
-#events article {
+body > section:nth-of-type(3) article {
     text-align: center;
 }
-#events time.icon {
+body > section:nth-of-type(3) time.icon {
     font-size: 1em; /* change icon size */
     display: block;
     position: relative;
@@ -177,7 +177,7 @@ nav ul {
     overflow: hidden;
     margin: 0 auto;
 }
-#events time.icon * {
+body > section:nth-of-type(3) time.icon * {
     display: block;
     width: 100%;
     font-size: 1em;
@@ -185,7 +185,7 @@ nav ul {
     font-style: normal;
     text-align: center;
 }
-#events time.icon strong {
+body > section:nth-of-type(3) time.icon strong {
     position: absolute;
     top: 0;
     padding: 0.4em 0;
@@ -194,17 +194,17 @@ nav ul {
     border-bottom: 1px dashed #6d2019;
     box-shadow: 0 2px 0 #c03a2b;
 }
-#events time.icon span {
+body > section:nth-of-type(3) time.icon span {
     color: #444444;
     font-size: 2.8em;
     letter-spacing: -0.05em;
     padding-top: 0.8em;
 }
-#events time strong {
+body > section:nth-of-type(3) time strong {
     font-weight: normal;
 }
 /* Popular Events ============================== */
-#popular {
+body > section:nth-of-type(4) {
     background-image: url(../images/bike.jpg);
     background-size: cover;
     background-position: center;
@@ -212,36 +212,36 @@ nav ul {
     height: 700px;
     color: #dddddd;
 }
-#popular h2 {
+body > section:nth-of-type(4) h2 {
     text-align: center;
     font-weight: normal;
     font-size: 3rem;
     padding-top: 20px;
 }
-#popular h2 strong {
+body > section:nth-of-type(4) h2 strong {
     font-size: 4rem;
 }
-#popular #event {
+body > section:nth-of-type(4) section:nth-child(2) {
     background-color: #dddddd;
     width: 70%;
     height: 450px;
     margin: 0 auto;
     color: #111111;
 }
-#event article {
+body > section:nth-of-type(4) section:nth-child(2) article {
     margin: 0 auto;
 }
-#event figure {
+body > section:nth-of-type(4) section:nth-child(2) figure {
     margin: 0;
     z-index: 1;
     width: auto;
 }
-#event img {
+body > section:nth-of-type(4) section:nth-child(2) img {
     width: 35%;
     height: 450px;
     position: absolute;
 }
-#event figcaption {
+body > section:nth-of-type(4) section:nth-child(2) figcaption {
     background-color: #222;
     color: #fff;
     opacity: 80%;
@@ -252,7 +252,7 @@ nav ul {
     margin-top: -6px;
     position: relative;
 }
-#event article p:nth-child(2) {
+body > section:nth-of-type(4) section:nth-child(2) article p:nth-child(2) {
     float: right;
     margin: 5px;
     z-index: 99;
@@ -261,13 +261,13 @@ nav ul {
     word-wrap: break-word;
     width: 34%;
 }
-#event article p:nth-child(3) {
+body > section:nth-of-type(4) section:nth-child(2) article p:nth-child(3) {
     float: right;
     margin-top: 420px;
     position: relative;
     right: 10px;
 }
-#event article p:nth-child(3)::after {
+body > section:nth-of-type(4) section:nth-child(2) article p:nth-child(3)::after {
     content: "\2192";
     padding-left: 5px;
     color: blue;

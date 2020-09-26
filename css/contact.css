@@ -75,7 +75,10 @@ nav ul {
     margin: 0;
 }
 /* Content ============================== */
-#main {
+body section {
+    margin: 0 auto;
+}
+body > section:nth-of-type(1) {
     width: 100%;
     height: 1000px;
     background-color: #111111;
@@ -87,47 +90,51 @@ nav ul {
     grid-template-columns: 150px 150px 150px 150px;
     grid-gap: 350px;
     justify-content: center;
+    align-content: center;
     padding-top: 25px;
     margin: 0 auto;
     margin-left: 25px;
 }
-#main section:nth-child(1) h2 {
+body > section:nth-of-type(1) section:nth-child(1) h2 {
     padding-top: 20px;
     width: 150px;
 }
-#main section:nth-child(1) img {
+body > section:nth-of-type(1) section:nth-child(1) img {
     width: 450px;
     height: 450px;
     border: 2px solid #c0392b;
 }
-#main section:nth-child(1) p {
+body > section:nth-of-type(1) section:nth-child(1) p {
     margin-top: 20px;
     margin-left: 10px;
     width: 450px;
 }
-#main section:nth-child(2) {
+body > section:nth-of-type(1) section:nth-child(2) {
     width: 500px;
 }
-#main section:nth-child(2) input, textarea {
+body > section:nth-of-type(1) section:nth-child(2) input, textarea {
     background-color: #444444;
     border: 2px solid #c0392b;
     color: #dddddd;
     font-family: program;
 }
-#main section:nth-child(2) textarea {
+body > section:nth-of-type(1) section:nth-child(2) textarea {
     width: 495px;
     height: 290px;
 }
-#main section:nth-child(2) input {
+body > section:nth-of-type(1) section:nth-child(2) input {
     width: 300px;
     height: 30px;
 }
-#main section:nth-child(2) label {
+body > section:nth-of-type(1) section:nth-child(2) label {
     padding-bottom: 50px;
 }
-#main section:nth-child(2) button {
+body > section:nth-of-type(1) section:nth-child(2) button {
     margin-top: 10px;
     float: right;
+}
+body > section:nth-child(2) label {
+    display: none;
 }
 /* Footer ============================== */
 footer {
