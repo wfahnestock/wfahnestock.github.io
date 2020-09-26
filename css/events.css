@@ -64,13 +64,15 @@ nav li { display: inline-block; }
 nav a {
 	display: block;
     padding: 1.3rem;
-    color: #999999;
+    margin-left: 50px;
+    color: #ffffff;
     opacity: 85%;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
 }
 nav a:hover {
-    color: #dddddd;
+    color: #999999;
     opacity: 100%;
 }
 nav .active {
