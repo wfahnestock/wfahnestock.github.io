@@ -239,6 +239,36 @@ body > section:nth-of-type(3) {
     color: #ffffff;
     text-align: center;
 }
+body > section:nth-of-type(3) #truck {
+    background-image: url(../images/truck.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border: 5px solid #666666;
+}
+body > section:nth-of-type(3) #wrench {
+    background-image: url(../images/wrench.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border: 5px solid #666666;
+}
+body > section:nth-of-type(3) #envelope {
+    background-image: url(../images/envelope.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border: 5px solid #666666;
+}
 body > section:nth-of-type(3) h2 {
     text-transform: uppercase;
     font-weight: normal;
@@ -288,9 +318,6 @@ body > section:nth-of-type(3) strong {
     right: 50px;
     margin-top: 10px;
     
-}
-#truck, #wrench, #envelope {
-    border: 5px solid #666666;
 }
 /* Footer ============================== */
 footer {
