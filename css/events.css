@@ -311,6 +311,20 @@ footer #grid section:nth-child(1) a {
 footer #grid section:nth-child(1) h4 {
     padding-bottom: 10px;
 }
+footer h4 {
+    padding-bottom: 10px;
+}
+footer li {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+}
 footer hr {
     color: #444444;
     width: 90%;
