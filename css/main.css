@@ -282,7 +282,7 @@ body > section:nth-of-type(3) strong {
     font-weight: bold;
     font-size: 3rem;
 }
-.grid {
+body > section:nth-of-type(3) .grid {
     display: grid;
     grid-template-columns: 150px 150px 150px 150px;
     grid-gap: 220px;
@@ -291,7 +291,7 @@ body > section:nth-of-type(3) strong {
     margin-top: 10%;
     margin-left: 350px;
 }
-.grid section {
+body > section:nth-of-type(3) .grid section {
     text-align: center;
 }
 .grid section p {
@@ -340,7 +340,7 @@ footer a:hover {
     text-decoration: underline;
     color: #dddddd;
 }
-footer #grid {
+footer .grid {
     display: grid;
     grid-template-columns: 150px 150px 150px 150px;
     grid-gap: 220px;
@@ -348,11 +348,14 @@ footer #grid {
     align-content: center;
     padding-top: 150px;
 }
-footer #grid section:nth-child(1) a {
+footer .grid section:nth-child(1) li {
+    font-weight: bold;
+}
+footer .grid section:nth-child(1) a {
     color:white;
     text-transform: uppercase;
 }
-footer #grid section:nth-child(1) h4 {
+footer .grid section:nth-child(1) h4 {
     padding-bottom: 10px;
 }
 footer h4 {

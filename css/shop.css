@@ -200,6 +200,9 @@ footer .grid {
     align-content: center;
     padding-top: 150px;
 }
+footer .grid section:nth-child(1) li {
+    font-weight: bold;
+}
 footer .grid section:nth-child(1) a {
     color:white;
     text-transform: uppercase;
